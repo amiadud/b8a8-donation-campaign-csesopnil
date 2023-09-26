@@ -8,19 +8,13 @@ const DonateList = () => {
 
     const myDonate = useLoaderData()
     const [dataLength, setDataLength] = useState(4)
-    const [noFound, setNoFound] = useState(false)
     const [donateDatas, setDonateDatas] = useState([])
     
     useEffect( () =>{
             const storedDonateIds = getStoredDonateData()
             if(myDonate.length > 0){
                 const donateData = myDonate.filter(donate => storedDonateIds.includes(donate.id))
-                if(!donateData){
-                    setNoFound("Not Found")
-                }
-                else{
-                    setDonateDatas(donateData);
-                }    
+                setDonateDatas(donateData);    
             }    
     },[myDonate])
 
@@ -35,7 +29,6 @@ const DonateList = () => {
             </div>
             
         </div>
-        <p className=' h-[80] flex justify-center  items-center'>{noFound}</p>
         <div className={ dataLength >= donateDatas.length && 'hidden'}  >
             <div className='text-center m-auto  rounded bg-red-400 w-24'>
             <button 
