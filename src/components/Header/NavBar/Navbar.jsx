@@ -6,7 +6,7 @@ const Navbar = () => {
         <div>
             <div className='flex justify-between flex-col md:flex-row items-center my-4'>
             <div>
-               <Link to="/"> <img  src="/src/assets/img/Logo.png" alt="" /></Link>
+               <Link to="/"> <img  src="https://i.ibb.co/gtmtk3z/Logo.png" alt="" /></Link>
             </div>
             <div className='space-x-1  text-2xl my-3 '>
                 <NavLink to="/" className={({ isActive, isPending }) =>

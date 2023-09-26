@@ -4,12 +4,13 @@ import Home from "../pages/Home/Home";
 import CardDetails from "../components/Card/CardDetails";
 import DonateList from "../components/Donation/DonateList";
 import Statistic from "../components/Statistic/Statistic";
+import ErrorPage from "../pages/Home/ErrorPage/ErrorPage";
 
 const myCreatedRoute = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
-      errorElement: <div>tor page nai</div>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
             {
                 path: "/",
