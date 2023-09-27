@@ -28,14 +28,14 @@ const Statistic = () => {
     return (
         <div className='my-20 ' >
            <div className='flex justify-center' >
-           <PieChart width={400} height={400}>
+           <PieChart width={300} height={400}>
           <Pie
             data={data}
             cx="50%"
             cy="50%"
             labelLine={false}
             label={renderCustomizedLabel}
-            outerRadius={180}
+            outerRadius={120}
             fill="#8884d8"
             dataKey="value"
           >

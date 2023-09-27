@@ -7,7 +7,7 @@ const Banner = () => {
             <div className='space-y-12'>
             <h2 className='text-center text-5xl '>I Grow By Helping People In Need</h2>
             <div className='flex justify-center'>
-            <input className='bg-white-400 border outline-none w-72 pl-2 rounded-lg rounded-r-none py-2 text-black' type="text" name="search" id="" />
+            <input className='bg-white-400 border outline-none w-30 md:w-72 pl-2 rounded-lg rounded-r-none py-2 text-black' type="text" name="search" id="" />
             <button className='bg-red-500 px-4 py-2 rounded-l-none rounded-lg text-white'>Search</button>
             </div>
             </div>
