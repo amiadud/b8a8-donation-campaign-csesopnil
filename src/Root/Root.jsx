@@ -27,6 +27,7 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path:`carddetails/:id`,
                 element:<CardDetails></CardDetails>,
+                errorElement: <ErrorPage></ErrorPage>,
                 loader: () => fetch('./data.json')
             },
             {
